@@ -8,6 +8,7 @@ From the repository root:
 # if run from non-Linux:
 vagrant up
 vagrant ssh
+cd /vagrant
 
 cd node
 docker build -t myapp .
@@ -21,6 +22,7 @@ Repeat with a modified `app.js` and port 8081.
 ## Running an nginx Proxy
 
 ```bash
+cd ../nginx
 docker run -d --name nginx -p 8082:80 -v `pwd`/log:/var/log/nginx -v `pwd`/sites:/etc/nginx/sites-available dockerfile/nginx
 ```
 
