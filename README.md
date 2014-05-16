@@ -5,7 +5,7 @@
 From the repository root:
 
 ```bash
-\# if run from non-Linux:
+# if run from non-Linux:
 vagrant up
 vagrant ssh
 
